@@ -1,0 +1,41 @@
+<!-- Fill your code here -->
+<html>
+<head>
+    <title>ajax-json</title>
+
+    <style>
+        table,tr,th{
+            border : 1px solid black;
+            border-collapse : collapse;
+        }
+     </style>
+</head>
+<body onload="display();">
+   <h2>Student Details</h2>
+    <table id="table">
+        
+    </table>
+
+    <form>
+        <label for="studentId">Student Id : </label>
+        <input type="text" id="studentId" name="studentId"><br>
+
+        <label for="fieldType">Field Type :  </label>
+        <select name="fieldType" id="fieldType">
+            <option value="name">Name</option>
+            <option value="dob">DOB</option>
+            <option value="mobileNumber">MobileNumber</option>
+            <option value="email">Email</option>
+            <option value="address">Address</option>
+            <option value="doj">DOJ</option>
+            <option value="department">Department</option>
+            <option value="mark">Mark</option>
+        </select><br>
+        <label for="fieldValue">Field Value : </label>
+        <input type="email" id="fieldValue" name="fieldValue"><br>
+
+        <input type="button"  onclick ="update();" value="UPDATE">
+    </form> 
+    <script src="main.js"></script>
+</body>
+</html>
